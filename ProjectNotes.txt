@@ -1,0 +1,47 @@
+Project Notes:
+
+This project is for a bank loan borrowing calculator.
+
+Below are the steps to run the project:
+1. Clone the project from below GIT repo:
+	https://github.com/PankajGangurde/BankProject.git
+2. Import the project into eclipse
+3. You will require Java8 and Chrome browser needs to be configured on your machine.
+4. Since this is not the maven project, you need to download the dependant jars and need to add it to the project build path. Jar names has been captured in a PNG file for reference, available in the project repo.
+5. Test scenarios has been scripted in feature file located at - LoanCalculator\src\main\resources\features\HomeLoanBasic.feature
+6. For running the scripts you can run the Test runner class located at - LoanCalculator\src\test\java\testRunners\Test_LoanCalculator.java
+7. After the test execution, Reports in different format can be seen at location - LoanCalculator\target\Destination
+
+
+Current Project State:
+Currently this project is at very basic level where it contains 3 cases of a bank loan calculator. 
+
+Future enhancements:
+- Design the input test data pattern either by cucumber data set or xls-hashmap. 
+- Add screenshots - At expected steps or at failures
+- Add the annotations for setup / teardown mechanism
+- Add the field validations for the expected values / messages etc
+- Update the common utilities for different selenium operations such as input text, select dropdown, waits etc
+- Enhanced Reports
+- CI-CD integration (jenkins)
+
+============================================================================================================================================
+Questions:
+
+1.	What other tests would you suggest could be written? You do not need to write them out in detail or code them.
+Answer - a. Different combinations of the field values with the estimated amount. For example - How the estimates gets changed if user changes the field value for "Application Type" from Single to Joint.
+		b. Negative values validations
+		c. Long values / characters, decimal values  in the input fields.
+		d. Living expense greater than income etc
+
+2.	If this test was part of a much larger test set, how would you speed it up?
+Answer - a. Make use of parallel execution either by multiple jobs in CI-CD, mulitple browser instance on different nodes using selenium grid etc
+		 b. Prepare different suites like smoke, sanity, regression for early execution.
+		 c. Write effective xpaths
+		 
+3.	Sometimes UI tests can fail unpredictably. For example, the page may not have fully loaded before test automation attempts to click a button on a webpage. How would you improve reliability of these tests?
+Answer - a. Page load mechanism
+		 b. Wait mechanism - Implicit, explicit, fluent. 
+		 c. Check whether the element is visible / clickable before clicking it.
+		 d. Create a separate suite of flaky test cases and run them continuously to analyse the results.
+=============================================================================================================================================		 
