@@ -14,11 +14,6 @@ import common.Page_BasePage;
 
 public class Page_BankHomePage  extends Page_BasePage {
 	
-	/*WebDriver driver;
-	public Page_BankHomePage(WebDriver driver) {
-        this.driver = driver;
-    }*/
-	
 	public void launchBrowser() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS) ;
@@ -26,22 +21,6 @@ public class Page_BankHomePage  extends Page_BasePage {
 	
 	WebElement element;
 	
-//	By applicationType = By.id("application_type_single");
-//	By applicationType = By.xpath("//input[@id='application_type_single']");
-//	By numberOfDependants = By.xpath("//select[@title='Number of dependants']");
-//	By borrowType = By.xpath("//label[contains(text(),'Property you would like to buy')]/..//input[@id='borrow_type_home']");
-//	By incomeBeforeTax = By.xpath("//label[contains(text(), 'Your income (before tax')]/..//input");
-//	By incomeOther = By.xpath("//label[contains(text(), 'Your other income')]/..//input");	
-//	By livingExpenses = By.xpath("//label[contains(text(), 'Living expenses')]/..//input");	
-//	By currentHomeLoanRepayments = By.xpath("//label[contains(text(), 'Current home loan repayments')]/..//input");	
-//	By otherLoanRepayments = By.xpath("//label[contains(text(), 'Other loan repayments')]/..//input");	
-//	By otherCommitments = By.xpath("//label[contains(text(), 'Other commitments')]/..//input");	
-//	By totalCreditCardLimits = By.xpath("//label[contains(text(), 'Total credit card limits')]/..//input");
-//	
-//	By borrowCalculationButton = By.xpath("//button[contains(text(),'Work out how much I could borrow')]");
-	
-	
-////	String applicationType = "application_type_single";
 	String applicationType = "//input[@id='application_type_single']";
 //	String numberOfDependants = "//select[@title='Number of dependants']";
 	String borrowType = "//label[contains(text(),'Property you would like to buy')]/..//input[@id='borrow_type_home']";
@@ -60,7 +39,7 @@ public class Page_BankHomePage  extends Page_BasePage {
 	
 	public void openBankURL() {
 		driver.get("https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/");
-//		this.driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 		
 	public void enterPersonDetails() {
@@ -73,21 +52,7 @@ public class Page_BankHomePage  extends Page_BasePage {
 		
 		element = driver.findElement(By.xpath(borrowType));
 		BankUtils.clickElement(element);
-	
-//		driver.findElement(incomeBeforeTax).sendKeys("80000");
-//		driver.findElement(incomeOther).sendKeys("10000");
-//		driver.findElement(livingExpenses).sendKeys("500");
-//		driver.findElement(currentHomeLoanRepayments).sendKeys("0");
-//		driver.findElement(otherLoanRepayments).sendKeys("100");
-//		driver.findElement(otherCommitments).sendKeys("0");
-//		driver.findElement(totalCreditCardLimits).sendKeys("10000");
 		
-		
-//		driver.findElement(By.xpath(applicationType)).click();
-////		driver.findElement(By.xpath("//input[@id='application_type_single']")).click();
-//		Select dependants = new Select(driver.findElement(By.xpath("//select[@title='Number of dependants']")));
-//		dependants.selectByVisibleText("2");
-//		driver.findElement(By.xpath(borrowType)).click();
 		driver.findElement(By.xpath(TEXT_incomeBeforeTax)).sendKeys("80000");
 		driver.findElement(By.xpath(TEXT_incomeOther)).sendKeys("10000");
 		driver.findElement(By.xpath(TEXT_livingExpenses)).sendKeys("500");

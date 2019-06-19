@@ -1,7 +1,5 @@
 package stepDefinitions;
 
-import common.Page_BasePage;
-
 import seleniumPages.Page_BankHomePage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -53,5 +51,4 @@ public class StepDefs_BankHomePage{
 	    System.out.println("Verify the error message");
 	    bankHomePage.enterPersonDetailsWithLivingExpenseValue();
 	}
-
 }
