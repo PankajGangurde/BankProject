@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="55.714269">
+<testcase classname="Home Loan Basic" name="Check the borrowing estimates of a person" time="21.741288">
+<system-out><![CDATA[Given I launch Chrome browser instance......................................passed
+When I open Bank Homepage...................................................passed
+And I enter the person details..............................................passed
+Then I verify the borrowing estimate........................................passed
+And I close the browser.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Loan Basic" name="Check the Start over button clears the form" time="16.839854">
+<system-out><![CDATA[Given I launch Chrome browser instance......................................passed
+When I open Bank Homepage...................................................passed
+And I enter the person details..............................................passed
+Then I verify the borrowing estimate........................................passed
+Then I verify Start over button clears the form.............................passed
+And I close the browser.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Loan Basic" name="Check the error message on submitting the form with zero values" time="17.133127">
+<system-out><![CDATA[Given I launch Chrome browser instance......................................passed
+When I open Bank Homepage...................................................passed
+And I enter the person details with living expense value....................passed
+Then I verify the error message.............................................passed
+And I close the browser.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
