@@ -7,7 +7,7 @@ Below are the steps to run the project:
 	https://github.com/PankajGangurde/BankProject.git
 2. Import the project into eclipse
 3. You will require Java8 and Chrome browser needs to be configured on your machine.
-4. Since this is not the maven project, you need to download the dependant jars and need to add it to the project build path. Jar names has been captured in a PNG file for reference, available in the project repo.
+4. Since this is not the maven project, you need to download the dependant jars and need to add it to the project build path. Jar names has been captured in a PNG file (jars.png) for reference, available in the project repo.
 5. Test scenarios has been scripted in feature file located at - LoanCalculator\src\main\resources\features\HomeLoanBasic.feature
 6. For running the scripts you can run the Test runner class located at - LoanCalculator\src\test\java\testRunners\Test_LoanCalculator.java
 7. After the test execution, Reports in different format can be seen at location - LoanCalculator\target\Destination
