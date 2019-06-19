@@ -51,4 +51,10 @@ public class StepDefs_BankHomePage{
 	    System.out.println("Verify the error message");
 	    bankHomePage.enterPersonDetailsWithLivingExpenseValue();
 	}
+	
+	@And("I close the browser")
+	public void I_close_the_browser() throws Exception {
+	    System.out.println("Closing the browser");
+	    bankHomePage.closeBrowser();
+	}
 }

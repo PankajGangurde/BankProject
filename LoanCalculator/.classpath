@@ -24,5 +24,6 @@
 	<classpathentry kind="lib" path="C:/Users/VRDPJQ/Downloads/Cucumber/gherkin-5.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VRDPJQ/Downloads/Cucumber/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VRDPJQ/Downloads/Cucumber/mockito-all-1.10.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VRDPJQ/Downloads/Cucumber/tag-expressions-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

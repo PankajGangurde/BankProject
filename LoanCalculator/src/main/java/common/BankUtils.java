@@ -9,7 +9,4 @@ public class BankUtils extends Page_BasePage{
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).click().build().perform();
 	}
-	
-	
-
 }
